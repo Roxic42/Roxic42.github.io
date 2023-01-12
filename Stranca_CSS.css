@@ -1,47 +1,59 @@
 .navbar ul {
     display: flex;
     width: 100%;
-    background-color: #EAEAEA;
+    background-color: #7498bc;
     color: black;
-    padding: 20px 50px;
-    box-shadow: 0 10px 8px #ddd;
+    padding: 0;
+    margin-top: 0;
+    box-shadow: 0 10px 8px rgb(194, 194, 194);
 }
 
 .navbar li {
     list-style-type: none;
     padding: 15px;
-    background-color: black;
+    background-color: #7498bc;
 }
 
 * {
     background-color: #EAEAEA;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar a {
     text-decoration: none;
+    color: #2e3d4b;
+    background-color: #7498bc;
+    font-weight: bold;
 }
 
 .navbar-logo {
-    flex: 0.9;
-    font-size: 25px;
+    flex: 1;
+    font-size: 30px;
     user-select: none;
+    font-weight: bold;
+    color: #2e3d4b;
 }
 
 .navbar-toggle {
     display: none;
-    color: black;
+    color: #2e3d4b;
+}
+
+.navbar-links {
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #5d7a96;
 }
 
 .navbar-links:hover {
-    background-color: #D8D8D8;
+    background-color: #5d7a96;
 }
 
 .navbar-links:hover a {
-    color: black;
+    color: #232e38;
+    background-color: #5d7a96;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .navbar ul {
         flex-wrap: wrap;
     }
