@@ -1,33 +1,43 @@
-.navbar ul {
-    display: flex;
-    width: 100%;
-    background-color: #7498bc;
-    color: black;
-    padding: 0;
-    margin-top: 0;
-    box-shadow: 0 10px 8px rgb(194, 194, 194);
-}
-
-.navbar li {
-    list-style-type: none;
-    padding: 15px;
-    background-color: #7498bc;
-}
-
+/*ovo je općenito*/
 * {
     background-color: #EAEAEA;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #2e3d4b;
+/*Isk nisam siguran za kaj je ovo*/
+.navbar ul {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    box-shadow: 0 2px 8px rgb(194, 194, 194);
+}
+
+/*Ovo je za izgled navbara*/
+.navbar li {
+    list-style-type: none;
+    padding: 10px;
     background-color: #7498bc;
-    font-weight: bold;
 }
 
+/*Ovo je za tekst oko navbara i za navbar tekst*/
+.navbar a {
+    text-decoration: none;     
+    color: #2e3d4b;
+    background-color: #7498bc; 
+    font-weight: bold;
+    
+}
+
+/*Ovo je za Prelude Wiki na navbaru*/
 .navbar-logo {
     flex: 1;
-    font-size: 30px;
+    font-size: 22px;
     user-select: none;
     font-weight: bold;
     color: #2e3d4b;
@@ -35,7 +45,6 @@
 
 .navbar-toggle {
     display: none;
-    color: #2e3d4b;
 }
 
 .navbar-links {
@@ -44,7 +53,7 @@
     border-color: #5d7a96;
 }
 
-.navbar-links:hover {
+.navbar-links:hover  {
     background-color: #5d7a96;
 }
 
