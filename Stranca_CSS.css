@@ -1,4 +1,11 @@
-/*ovo je općenito*/
+.stranca {
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 50px;
+}
+
 * {
     background-color: #EAEAEA;
     margin: 0;
@@ -7,70 +14,81 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
-/*Isk nisam siguran za kaj je ovo*/
-.navbar ul {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0;
-    margin-top: 0;
-    box-shadow: 0 2px 8px rgb(194, 194, 194);
+.header {
+    grid-column: 1 / -1;
+    background-color: #232424;
 }
 
-/*Ovo je za izgled navbara*/
-.navbar li {
+ul {
     list-style-type: none;
-    padding: 10px;
-    background-color: #7498bc;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232424;
 }
-
-/*Ovo je za tekst oko navbara i za navbar tekst*/
-.navbar a {
-    text-decoration: none;     
-    color: #2e3d4b;
-    background-color: #7498bc; 
-    font-weight: bold;
+    
+li {
+    float: right;
+}
+    
+li a, .dropbtn {
+    display: inline-block;
+    color: #EAEAEA;
+    background-color: #232424;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+    
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #0f0f0f;
     
 }
-
-/*Ovo je za Prelude Wiki na navbaru*/
-.navbar-logo {
-    flex: 1;
-    font-size: 22px;
-    user-select: none;
-    font-weight: bold;
-    color: #2e3d4b;
+    
+    li.dropdown {
+    display: inline-block;
 }
-
-.navbar-toggle {
+    
+.dropdown-content {
     display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+    
+.dropdown-content a {
+    color: #EAEAEA;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+    
+.dropdown-content a:hover {background-color: #0f0f0f;}
+    
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.navbar-links {
-    border-style: solid;
-    border-width: 0px 0px 0px 1px;
-    border-color: #5d7a96;
+
+.content {
+    grid-column: 3 / 11;
+    background-color: blueviolet;
+    height: 90vw;
+    margin-top: 5px;
+    margin-right: 20px;
 }
 
-.navbar-links:hover  {
-    background-color: #5d7a96;
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
 }
 
-.navbar-links:hover a {
-    color: #232e38;
-    background-color: #5d7a96;
-}
-
-@media (max-width: 800px) {
-    .navbar ul {
-        flex-wrap: wrap;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-links {
-        width: 100%;
-        text-align: center;
-    }
+.footer {
+    grid-column: 1 / -1;
+    text-align:center;
 }
