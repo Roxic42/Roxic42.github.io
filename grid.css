@@ -72,9 +72,8 @@ li a:hover, .dropdown:hover .dropbtn {
 
 
 .content {
-    grid-column: 4 / 10;
-    background-color: blueviolet;
-    padding: 4vw;
+    grid-column: 3 / 10;
+    padding: 1vw;
 }
 
 .naslovna {
@@ -84,19 +83,29 @@ li a:hover, .dropdown:hover .dropbtn {
     position: relative;
 }
 
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    letter-spacing: normal;
+    line-height: 130%;
+    word-spacing: 0.125rem;
+}
+
 .naslovna-text {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #EAEAEA
+    color: #EAEAEA;
+    font-size:xx-large;
 }
 
 .footer {
     grid-column: 1 / -1;
     text-align:center;
-    background-color: #EAEAEA;
-    color: #232424;
+    background-color:#232424;
+    color: #EAEAEA ;
     padding: 2vw;
 }
+
