@@ -1,10 +1,9 @@
 .stranca {
-    height: 100;
+    height: 100vh;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60px 690px auto auto;
-    background-color: #EAEAEA;
+    grid-template-rows: 60px 93.65244536940686vh auto 100px;
 }
 
 * {
@@ -19,6 +18,18 @@
     background-color: #232424;
 }
 
+
+@media only screen and (max-width: 768px) {
+    li a, .dropbtn {font-size: 12px; padding: 24px 12px !important;}
+    .stranca {grid-template-rows: 60px auto 100px;}
+    .naslovna {display: none;}
+}
+
+@media only screen and (max-width: 375px) {
+    li a, .dropbtn {font-size: 12px; padding: 24px 8px !important;}
+}
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -30,22 +41,21 @@ ul {
 li {
     float: right;
 }
-    
+
 li a, .dropbtn {
     display: inline-block;
     color: #EAEAEA;
     background-color: #232424;
     text-align: center;
-    padding: 24px 16px;
+    padding: 24px 22px;
     text-decoration: none;
 }
     
 li a:hover, .dropdown:hover .dropbtn {
     background-color: #0f0f0f;
-    
 }
     
-    li.dropdown {
+li.dropdown {
     display: inline-block;
 }
     
@@ -71,11 +81,6 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 
-.content {
-    grid-column: 3 / 10;
-    padding: 1vw;
-}
-
 .naslovna {
     grid-column: 1 / -1;
     background: url(lijepastara.jpg) no-repeat center fixed;
@@ -83,12 +88,8 @@ li a:hover, .dropdown:hover .dropbtn {
     position: relative;
 }
 
-p {
-    font-size: 1.2rem;
-    text-align: justify;
-    letter-spacing: normal;
-    line-height: 130%;
-    word-spacing: 0.125rem;
+.naslovna-header {
+    color: #EAEAEA;
 }
 
 .naslovna-text {
@@ -101,7 +102,15 @@ p {
     font-size:xx-large;
 }
 
+.content {
+    grid-column: 3 / 10;
+    padding: 1vw;
+}
+
 .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     grid-column: 1 / -1;
     text-align:center;
     background-color:#232424;
@@ -110,3 +119,25 @@ p {
 }
 
 
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    letter-spacing: normal;
+    line-height: 130%;
+    word-spacing: 0.125rem;
+    margin-top: 10px;
+    color: #232424;
+}
+
+h1 {
+    color: #232424;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 10px;
+}
