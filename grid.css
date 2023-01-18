@@ -21,13 +21,17 @@
 
 @media only screen and (max-width: 540px) {
     li a, .dropbtn {font-size: 0.75rem; padding: 24px 12px !important;}
+    .content {grid-column: 1 / -1 !important;}
     p {font-size: 0.75rem !important;}
     h1 {font-size: 1rem !important;}
 }
 
 @media only screen and (max-width: 875px) {
-    .stranca {grid-template-rows: 60px auto 100px;}
-    .naslovna {display: none;}
+    .stranca {grid-template-rows: 60px 22vh auto 100px;}
+    .naslovna {background:none !important; }
+    .naslovna-header {color:#232424 !important; font-size: 2rem !important;}
+    #naslovnah5 {color: #232424 !important; font-size: medium;}
+    .naslovna-text {top: 48% !important; left: 50%;}
 }
 
 ul {
@@ -90,6 +94,12 @@ li.dropdown {
 
 .naslovna-header {
     color: #EAEAEA;
+    text-shadow: 2px 2px 5px #232424;
+}
+
+#naslovnah5 {
+    color: #EAEAEA;
+    text-shadow: 2px 2px 5px #232424;
 }
 
 .naslovna-text {
@@ -98,7 +108,6 @@ li.dropdown {
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #EAEAEA;
     font-size:xx-large;
 }
 
