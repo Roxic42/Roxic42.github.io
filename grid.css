@@ -20,10 +20,13 @@
 
 
 @media only screen and (max-width: 540px) {
-    li a, .dropbtn {font-size: 0.75rem; padding: 24px 12px !important;}
+    li a, .dropbtn {font-size: 0.85rem; padding: 24px 12px !important;}
+    p {font-size: 0.8rem !important;}
+    h1 {font-size: 1.05rem !important;}
+}
+
+@media only screen and (max-width: 821px) {
     .content {grid-column: 1 / -1 !important;}
-    p {font-size: 0.75rem !important;}
-    h1 {font-size: 1rem !important;}
 }
 
 @media only screen and (max-width: 875px) {
