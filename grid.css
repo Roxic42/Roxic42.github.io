@@ -21,8 +21,8 @@
 
 @media only screen and (max-width: 540px) {
     li a, .dropbtn {font-size: 0.85rem; padding: 24px 12px !important;}
-    p {font-size: 0.8rem !important;}
-    h1 {font-size: 1.05rem !important;}
+    p {font-size: 0.9rem !important; margin-left: 2px !important;}
+    h1 {font-size: 1.2rem !important;}
 }
 
 @media only screen and (max-width: 821px) {
