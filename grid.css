@@ -21,8 +21,8 @@
 
 @media only screen and (max-width: 540px) {
     li a, .dropbtn {font-size: 0.85rem; padding: 24px 12px !important;}
-    p {font-size: 0.9rem !important; margin-left: 2px !important;}
-    h1 {font-size: 1.2rem !important;}
+    p {font-size: 0.9rem !important; padding-left: 2px !important;}
+    h1 {font-size: 1.2rem !important; padding-left: 2px !important;}
 }
 
 @media only screen and (max-width: 821px) {
@@ -137,14 +137,14 @@ p {
     letter-spacing: normal;
     line-height: 130%;
     word-spacing: 0.125rem;
-    margin-top: 20px;
+    padding-top: 20px;
     color: #232424;
 }
 
 
 h1 {
     color: #232424;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 
@@ -153,9 +153,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    margin-top: 10px;
+    padding-top: 15px;
 }
 
 .prvih {
-    margin-top: 0;
+    padding-top: 0;
 }
