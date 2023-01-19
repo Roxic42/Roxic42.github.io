@@ -25,9 +25,6 @@
     h1 {font-size: 1.2rem !important; padding-left: 2px !important;}
 }
 
-@media only screen and (max-width: 821px) {
-    .content {grid-column: 1 / -1 !important;}
-}
 
 @media only screen and (max-width: 875px) {
     .stranca {grid-template-rows: 60px 22vh auto 100px;}
@@ -35,6 +32,7 @@
     .naslovna-header {color:#232424 !important; font-size: 2rem !important; text-shadow: none !important;}
     #naslovnah5 {color: #232424 !important; font-size: medium; text-shadow: none !important;}
     .naslovna-text {top: 48% !important; left: 50%;}
+    .content {grid-column: 1 / -1 !important;}
 }
 
 ul {
@@ -155,6 +153,7 @@ img {
     width: 100%;
     padding-top: 15px;
 }
+
 
 .prvih {
     padding-top: 0;
